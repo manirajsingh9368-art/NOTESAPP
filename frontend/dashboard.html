@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+    <h2>NOTES APP</h2>
+    <button onclick="toggleTheme()"> Toggle Theme</button>
+    <button onclick="logout()">Logout</button>
+</div>
+
+
+
+<div class="container"> 
+    <h1>Notes Dashboard</h1>
+     
+    <input type ="text" id="search" placeholder="Search notes..." oninput="searchNotes()">
+
+    <h3>Create Note</h3>
+
+    <input id="title" placeholder="Title">
+    <input id="content" placeholder="Content">
+    
+    <button id ="createBtn" onclick="createNote()">Create Note</button>
+
+    <br><br>
+
+    <button onclick="loadNotes()">Load Notes</button>
+
+    <ul id="notes"></ul>
+
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
